@@ -1,5 +1,5 @@
-from random import randist
-lst = [randist (-10,10) for i in range (20)]
+from random import randint
+lst = [randint (-10,10) for i in range (20)]
 print(lst)
 
 sum_negetive = 0
@@ -11,10 +11,10 @@ print("Sum negative item list:", sum_negetive)
 
 
 
-sum_of_odd = 0
+sum_of_even = 0
 for num in lst:
     if num % 2 != 0:
-        sum_of_odd += num
+        sum_of_even += num
 print("Sum negative item list:",sum_of_even )
 
 
@@ -22,7 +22,7 @@ sum_of_odd = 0
 for num in lst:
     if num % 2 != 0:
         sum_of_odd += num
-    print("Sum negative item list:", sum_of_even)
+    print("Sum negative item list:", sum_of_odd)
 
     sum_elements_mult_3=0
     for i in range(len(lst)):
